@@ -1,0 +1,99 @@
+body {
+  background-image: url("/night.jpg");
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+}
+
+.sel{
+  cursor:default;
+}
+
+.sel::selection {
+background-color: transparent;
+}
+  
+  .form {
+    display: flex;
+    gap: 10px;
+  }
+
+  .input {
+  padding: 1rem;
+  font-size: 8rem;
+  border: none;
+  /* outline: none; */
+  width: 95vw;
+  height: 60vh;
+  text-align: center;
+  background: none;
+  color: azure;
+  overflow: hidden;
+}
+
+.input::placeholder {
+  color: aliceblue;
+  opacity: 0.8;
+}
+
+.input::selection {
+  background-color: rgb(42, 56, 77);
+  }
+
+.btn {
+  /* padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  width: 8rem; */
+  display: none;
+}
+
+.greet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome {
+  font-size: 6rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.day {
+  font-size: 3rem;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+.date {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  right: 4rem;
+  top: 3rem;
+  font-size: 8rem;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+}
